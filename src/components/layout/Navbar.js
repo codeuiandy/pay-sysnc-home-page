@@ -1,5 +1,5 @@
 import React from 'react';
-import paysyncLogo from '../assets/paysyncLogo.svg';
+import paysyncLogo from '../../assets/paysyncLogo.svg';
 
 const Navbar = () => {
     return (

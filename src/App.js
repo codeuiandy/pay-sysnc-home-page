@@ -1,16 +1,18 @@
+import React from 'react'
+import { Route, BrowserRouter as Router , Switch } from 'react-router-dom';
 import './App.css';
-import BlogsHeader from './components/blogs/BlogsHeader';
-import Navbar from './components/Navbar';
-// import BlogLayout from './components/blogs';
-import AllBlogs from './components/blogs/AllBlogs';
+import Blog from './components/blogs/index';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <BlogsHeader />
-      <AllBlogs />
-      {/* <BlogLayout /> */}
+  <Router>
+    <Switch>
+          <Route exact path="/" component={Blog} />
+  
+      </Switch>
+  </Router>
+    
 
     </div>
   );

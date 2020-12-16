@@ -1,11 +1,14 @@
 import React from 'react';
-
-export default function index(props) {
+import BlogHeader from './BlogsHeader'
+import BlogGrid from './AllBlogs'
+import Layout from '../layout/layout'
+export default function Index(props) {
     return (
         <React.Fragment>
-            <div className="blog-wrapper">
-                {props.children}
-            </div>
+            <Layout >
+                <BlogHeader/>
+                <BlogGrid/>
+            </Layout>
         </React.Fragment>
     )
 }

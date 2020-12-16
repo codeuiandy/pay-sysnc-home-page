@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from './index';
 import image1 from '../../assets/Component 4 – 1.svg';
 import image2 from '../../assets/Rectangle 475.svg';
 import image3 from '../../assets/Rectangle 479.svg';
@@ -63,7 +62,7 @@ const AllBlogs = () => {
         },
     ];
     return (
-        <Layout>
+        <div className="blog-wrapper" >
             {
                 blogData.map((item, index) => <GridBlog
                     key={index}
@@ -74,7 +73,7 @@ const AllBlogs = () => {
                 />
                 )
             }
-        </Layout>
+        </div >
     )
 }
 
