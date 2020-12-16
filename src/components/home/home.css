@@ -1,0 +1,213 @@
+.home-page-wrap {
+  background-image: url(../../assets/hero-img.png);
+  width: 100vw;
+  height: 690px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.pay-sync-hero-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.pay-sync-hero-text-wrap h1 {
+  font-size: clamp(35px, 5vw, 45px);
+  line-height: 58px;
+  text-align: center;
+  color: #14274e;
+  font-weight: 600;
+  position: relative;
+  bottom: 30px;
+  line-height: 50px;
+}
+
+.pay-sync-hero-text-wrap h4 {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #14274e;
+  opacity: 0.58;
+}
+
+.about-app-home-page {
+  background-color: white;
+}
+
+.download-app-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avalable-home {
+  margin-bottom: 20px;
+}
+
+.avalable-home h1 {
+  font-weight: 600;
+  font-size: 31px;
+  text-align: left;
+  color: #14274e;
+}
+
+.download-store-home img {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.trustedby-sec-home {
+  margin-top: 50px;
+}
+
+.trustedby-sec-home h1 {
+  font-weight: 600;
+  font-size: 31px;
+  text-align: left;
+  color: #14274e;
+  text-align: center;
+}
+
+.trusted-by-images-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.trusted-by-images-home img {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.hr-home-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.hr-home-sm {
+  width: 120px;
+  height: 3px;
+  background-color: orange;
+  text-align: center;
+}
+
+.body-gen-padding-home {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+}
+
+.paysync-solution-home h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 26px;
+  text-align: center;
+  color: #14274e;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.paysync-solution-home h3 {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: #14274e;
+  opacity: 0.92;
+
+  text-align: center;
+}
+.what-we-do-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-section-home {
+  width: 50%;
+}
+
+.what-we-do-img {
+  width: 50%;
+}
+
+.our-service-home {
+  background-color: #f1f6f9;
+  padding-top: 50px;
+}
+
+.what-we-do-img img {
+  width: 100%;
+}
+
+.service-header-home {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  color: #14274e;
+}
+
+.serve-list-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.service-home-list-img-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.serve-list-home div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.serve-list-home div h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #14274e;
+}
+
+.serve-list-home div p {
+  font-size: 16px;
+  line-height: 34px;
+  text-align: right;
+  color: #6f6f6f;
+  margin-top: 4px;
+}
+
+.service-padding-home {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

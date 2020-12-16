@@ -1,9 +1,9 @@
 import React from 'react';
 import paysyncLogo from '../../assets/paysyncLogo.svg';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-        <div className="navbar-container">
+        <div style={props.background === false ? {backgroundColor:"transparent" } : {}} className="navbar-container">
             <img src={paysyncLogo} alt="" className="paysync-logo" />
             <div className="navbar-mid-nav">
                 <div>Employers</div>

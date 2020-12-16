@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   height: 102px;
-  background: #f1f6f9;
+  background: #ecf1f5;
 }
 .paysync-logo {
   width: 187.17px;
@@ -234,4 +234,9 @@
   width: 166.45px;
   height: 22px;
   background: transparent;
+}
+
+.layout-wrap {
+  background-color: #f1f6f9;
+  width: 100%;
 }
