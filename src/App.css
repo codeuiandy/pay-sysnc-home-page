@@ -126,6 +126,7 @@
       height: 250px;
       position: absolute;
       top: 90px;
+      margin: 0;
       right: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -343,14 +344,23 @@
 }
 
 /* footer */
-.footer {
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px;
   width: 100%;
   height: 410px;
   background: #14274e;;
 }
+.footer-left {
+  width: 40%;
+  max-width: 480px;
+  min-width: 320px;
+  padding-right: 25px;
+  background: transparent;
+}
 .footer-logo {
   width: 166.44px;
-  height: 37.76px;
   background: transparent;
 }
 .footer-msg {
@@ -358,7 +368,9 @@
   font-weight: normal;
   font-size: 21px;
   line-height: 32px;
+  width: 90%;
   text-align: left;
+  margin: 25px 0;
   color: #fff;
 }
 .learn-more {
@@ -367,10 +379,157 @@
   font-size: 21px;
   line-height: 32px;
   text-align: left;
+  margin-bottom: 25px; 
   color: #fff;
+}
+.social-logo {
+  margin: 0 10px;
 }
 
 .layout-wrap {
   background-color: #f1f6f9;
   width: 100%;
+}
+.menu-header {
+  text-transform: uppercase;
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+
+}
+.footer-menu, .footer-info {
+  min-width: 240px;
+}
+.footer-menu h6 {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+
+}
+.info-header {
+  text-transform: uppercase;
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+}
+.footer-info h6 {
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+}
+.newletter-header {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+}
+.footer-newsletter h6 {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #f1f6f9;
+}
+.subscription-wrapper {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 27.5px;
+  background: #fff;
+}
+.subscription-wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 55px;
+  border-radius: 0px 27.5px 27.5px 0px;
+  background: #f1f6f9;
+  border: none;
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: left;
+  color: #14274e;
+}
+.subscription-wrapper input {
+  width: 60%;
+  height: 55px;
+  border-radius: 27.5px 0 0 27.5px ;
+  border: none;
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 66px;
+  text-align: center;
+  color: #14274e;
+  opacity: 0.25;
+}
+.appstore-wrapper img {
+  width: 160px;
+  height: 55px;
+  margin: 10px;
+  border-radius: 27.5px;
+  background: #fff;
+}
+
+/* Footer responsive */
+@media screen and (max-width: 968px) {
+  .footer-main {
+    padding: 0 35px;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .subscription-wrapper {
+    width: 50%;
+    min-width: 280px;
+  }
+  .subscription-wrapper input {
+    font-size: 16px;
+  }
+  .footer-newsletter {
+    margin-top: 50px;
+  }
+  .footer-left, .footer-menu, .footer-info {
+    margin-top: 50px;
+    min-width: 240px;
+}
+  .appstore-wrapper {
+    display: flex;
+    min-width: 280px;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .social-logo {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .appstore-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .appstore-wrapper img {
+    width: 90%;
+  }
 }
