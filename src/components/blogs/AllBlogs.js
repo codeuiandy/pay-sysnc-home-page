@@ -62,6 +62,7 @@ const AllBlogs = () => {
         },
     ];
     return (
+        <div>
         <div className="blog-wrapper" >
             {
                 blogData.map((item, index) => <GridBlog
@@ -74,6 +75,14 @@ const AllBlogs = () => {
                 )
             }
         </div >
+        <div className="prev-next-page">
+                {
+                    ["1", "2", "3", "...", "25", "Next >>"].map((data, i) => <div key={i} className="prev-next-items">
+                        <div>{data}</div>
+                    </div>)
+                }
+            </div>
+        </div>
     )
 }
 
