@@ -5,13 +5,13 @@ export default function Layout(props) {
   return (
     <React.Fragment>
       <div className="layout-wrap">
-      <Navbar/>
+      <Navbar background={props.background}/>
 					<div className="centra-margin">
 				
 	                {props.children}
 					
       </div>
-      <Footer/>
+      	<Footer/>
       </div>
     </React.Fragment>
   );

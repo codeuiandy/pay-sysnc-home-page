@@ -29,6 +29,12 @@ const Navbar = () => {
         <div className="navbar-container">
                 <img src={paysyncLogo} alt="" className="paysync-logo" />
             {(showMenu || mobileButton) && <div className="navbar-mid-nav">
+
+const Navbar = (props) => {
+    return (
+        <div style={props.background === false ? {backgroundColor:"transparent" } : {}} className="navbar-container">
+            <img src={paysyncLogo} alt="" className="paysync-logo" />
+            <div className="navbar-mid-nav">
                 <div>Employers</div>
                 <div>Employees</div>
                 <div>Blogs</div>
