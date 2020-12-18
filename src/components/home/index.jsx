@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../layout/layout";
 import "./home.css";
-import Playstoreimg from "../../assets/playstore.svg";
-import Apple from "../../assets/apple.svg";
 import "react-accessible-accordion/dist/fancy-example.css";
 import {
   Accordion,
@@ -11,6 +9,14 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import Playstoreimg from "../../assets/playstore.svg";
+import Apple from "../../assets/apple.svg";
+import recycleRight from "../../assets/recycle.svg";
+import recycleLeft from "../../assets/recycle.png";
+import crackers from "../../assets/crackers.svg";
+import previousIcon from "../../assets/PreviousIcon.svg";
+import nextIcon from "../../assets/NextIcon.svg";
+import userImg from "../../assets/userImage.svg";
 export default function Index(props) {
   return (
     <React.Fragment>
@@ -65,7 +71,7 @@ export default function Index(props) {
                     by eliminating them the hassle and stress to sought out
                     their financial issues at workplace. Ultimately, we are
                     focusing on improving your happiness and productivity
-                    through the most reputable financial platform in Africa. 
+                    through the most reputable financial platform in Africa.
                   </h3>
                 </div>
 
@@ -83,7 +89,7 @@ export default function Index(props) {
                           We make your life easy by reducing and eliminating the
                           friction of you granting employees loans by allowing
                           workers to access their own money instead of relying
-                          on high-interest loans. 
+                          on high-interest loans.
                         </AccordionItemPanel>
                       </AccordionItem>
 
@@ -97,7 +103,7 @@ export default function Index(props) {
                           We make your life easy by reducing and eliminating the
                           friction of you granting employees loans by allowing
                           workers to access their own money instead of relying
-                          on high-interest loans. 
+                          on high-interest loans.
                         </AccordionItemPanel>
                       </AccordionItem>
 
@@ -111,7 +117,7 @@ export default function Index(props) {
                           We make your life easy by reducing and eliminating the
                           friction of you granting employees loans by allowing
                           workers to access their own money instead of relying
-                          on high-interest loans. 
+                          on high-interest loans.
                         </AccordionItemPanel>
                       </AccordionItem>
                     </Accordion>
@@ -175,6 +181,55 @@ export default function Index(props) {
                   <p>Lorem ipso dolor ipsum nisi</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+
+          <div className="subscription-news-home">
+            <div className="subscription-padding-home">
+              <h1 className="subscription-header-home">
+                Financial inclusion in African market has been <b>out of reach</b> for decades,
+                but we have found the <b>solution</b>.
+                <img src={crackers} alt="" />
+              </h1>
+              <h1 className="subscribe-label">Get Started</h1>
+
+              <div className="subscribe-wrapper-home">
+                <img src={recycleLeft} alt="" className="arrow-recycle-left" />
+                <div className="subscribe-now-home">
+                  <input type="email" name="email" placeholder="Your email address" />
+                  <button>Let's go</button>
+                </div>
+                <img src={recycleRight} alt="" className="arrow-recycle-right" />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="testimonials-home">
+            <div className="testimonials-padding-home">
+              <small>Testimonials</small>
+              <h1 className="testimonials-header-home">
+                Loved by our users.
+              </h1>
+              <div className="testimonial-middle">
+                <img src={previousIcon} alt="" className="previous-testimony" />
+                <div className="testimonial-message-box">
+                  <p>
+                    “It is comforting to know that if for some reason during the month you are in urgent need of cash
+                    that you have Floatpays as a back up, and the best of all it is money that you have already earned
+                    during the month and no percentage fees to worry about.”
+                  </p>
+                  <div className="user-name-testimony">
+                    <img src={userImg} alt="" />
+                    <div className="user-img-testimony">Diana Pierce</div>
+                    <div className="user-designation-testimony">CEO, Brick Consulting</div>
+                  </div>
+                </div>
+                <img src={nextIcon} alt="" className="next-testimony" />
+              </div>
+
             </div>
           </div>
         </div>
