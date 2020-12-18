@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import paysyncLogo from "../../assets/paysyncLogo.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Navbar = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [mobileButton, setMobileButton] = useState(true)
+  const history = useHistory();
 
   const clickedMenu = () => {
     setShowMenu(!showMenu);
@@ -38,7 +39,7 @@ const Navbar = (props) => {
         <div>Employers</div>
         <div>Employees</div>
         <div>
-          <Link style={{ textDecoration: "none" }} to="/blog">
+          <Link to="/blog">
             Blogs
           </Link>
         </div>
@@ -47,7 +48,7 @@ const Navbar = (props) => {
       </div>}
       {(showMenu || mobileButton) && <div className="navbar-right">
         <button className="login-button">Login</button>
-        <button className="signup-button">Get Started</button>
+        <button onClick={() => history.push("/access")} className="signup-button">Get Started</button>
       </div>}
 
       <div className="mobile-toggle">
